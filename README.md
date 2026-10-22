@@ -43,3 +43,13 @@ hostname -I
 ```
 
 Este comando muestra la IP de CentOS, que se utiliza para conectarse al servidor y abrir la página web.
+
+## Paso 6. Consultar el usuario
+
+```bash
+whoami
+```
+
+Este comando muestra el usuario actual de CentOS.
+
+Con la IP y el usuario se configura la conexión en MobaXterm, seleccionando Session, SSH y el puerto 22.
