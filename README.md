@@ -101,3 +101,11 @@ sudo apachectl configtest
 ```
 
 Este comando comprueba la configuración de Apache. Si está correcta, aparece el mensaje Syntax OK.
+
+## Paso 13. Comprobar el estado del servidor web
+
+```bash
+systemctl is-active httpd
+```
+
+Este comando comprueba si Apache está funcionando. El resultado esperado es active.
