@@ -19,3 +19,11 @@ sudo systemctl enable --now firewalld sshd
 ```
 
 Este comando inicia SSH y el firewall. También permite que arranquen automáticamente al encender CentOS.
+
+## Paso 3. Permitir conexiones SSH
+
+```bash
+sudo firewall-cmd --permanent --add-service=ssh
+```
+
+Este comando permite las conexiones SSH en el firewall para acceder desde MobaXterm.
