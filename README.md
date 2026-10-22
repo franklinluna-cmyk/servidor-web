@@ -61,3 +61,11 @@ sudo dnf install -y httpd curl
 ```
 
 Este comando instala Apache para publicar la página web y curl para comprobarla desde la terminal.
+
+## Paso 8. Activar el servidor web
+
+```bash
+sudo systemctl enable --now httpd
+```
+
+Este comando inicia Apache y permite que arranque automáticamente al encender CentOS.
