@@ -77,3 +77,11 @@ sudo firewall-cmd --permanent --add-service=http
 ```
 
 Este comando permite acceder a la página web desde otros equipos de la red mediante el puerto 80.
+
+## Paso 10. Aplicar la regla HTTP
+
+```bash
+sudo firewall-cmd --reload
+```
+
+Este comando aplica el permiso de acceso HTTP en el firewall.
