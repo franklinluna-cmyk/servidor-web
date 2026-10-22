@@ -118,3 +118,9 @@ curl http://localhost
 
 Este comando consulta la página desde el propio servidor. Debe mostrar el código HTML creado en el paso 11.
 
+## Paso 15. Comprobar el acceso desde Windows
+
+En el navegador de Windows se escribe http:// seguido de la IP del servidor.
+
+Al abrir la dirección debe aparecer el título "Servidor web de Franklin" y el mensaje "CentOS con Apache HTTPD funcionando".
+
