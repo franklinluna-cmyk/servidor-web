@@ -93,3 +93,11 @@ echo '<h1>Servidor web de Franklin</h1><p>CentOS con Apache HTTPD funcionando.</
 ```
 
 Este comando crea el archivo index.html con el contenido de la página dentro de la carpeta que utiliza Apache.
+
+## Paso 12. Revisar la configuración de Apache
+
+```bash
+sudo apachectl configtest
+```
+
+Este comando comprueba la configuración de Apache. Si está correcta, aparece el mensaje Syntax OK.
