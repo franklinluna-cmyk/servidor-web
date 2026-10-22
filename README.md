@@ -53,3 +53,11 @@ whoami
 Este comando muestra el usuario actual de CentOS.
 
 Con la IP y el usuario se configura la conexión en MobaXterm, seleccionando Session, SSH y el puerto 22.
+
+## Paso 7. Instalar Apache HTTPD y curl
+
+```bash
+sudo dnf install -y httpd curl
+```
+
+Este comando instala Apache para publicar la página web y curl para comprobarla desde la terminal.
