@@ -11,3 +11,11 @@ sudo dnf install -y openssh-server firewalld
 ```
 
 Este comando instala SSH para conectarse desde MobaXterm y el firewall para controlar las conexiones.
+
+## Paso 2. Activar SSH y el firewall
+
+```bash
+sudo systemctl enable --now firewalld sshd
+```
+
+Este comando inicia SSH y el firewall. También permite que arranquen automáticamente al encender CentOS.
