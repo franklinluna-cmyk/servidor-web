@@ -69,3 +69,11 @@ sudo systemctl enable --now httpd
 ```
 
 Este comando inicia Apache y permite que arranque automáticamente al encender CentOS.
+
+## Paso 9. Permitir conexiones HTTP
+
+```bash
+sudo firewall-cmd --permanent --add-service=http
+```
+
+Este comando permite acceder a la página web desde otros equipos de la red mediante el puerto 80.
