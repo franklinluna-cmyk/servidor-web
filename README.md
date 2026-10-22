@@ -35,3 +35,11 @@ sudo firewall-cmd --reload
 ```
 
 Este comando aplica las reglas guardadas en el firewall.
+
+## Paso 5. Consultar la IP del servidor
+
+```bash
+hostname -I
+```
+
+Este comando muestra la IP de CentOS, que se utiliza para conectarse al servidor y abrir la página web.
