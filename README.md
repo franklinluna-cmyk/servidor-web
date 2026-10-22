@@ -27,3 +27,11 @@ sudo firewall-cmd --permanent --add-service=ssh
 ```
 
 Este comando permite las conexiones SSH en el firewall para acceder desde MobaXterm.
+
+## Paso 4. Aplicar los cambios del firewall
+
+```bash
+sudo firewall-cmd --reload
+```
+
+Este comando aplica las reglas guardadas en el firewall.
