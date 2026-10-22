@@ -109,3 +109,12 @@ systemctl is-active httpd
 ```
 
 Este comando comprueba si Apache está funcionando. El resultado esperado es active.
+
+## Paso 14. Comprobar la página desde la terminal
+
+```bash
+curl http://localhost
+```
+
+Este comando consulta la página desde el propio servidor. Debe mostrar el código HTML creado en el paso 11.
+
