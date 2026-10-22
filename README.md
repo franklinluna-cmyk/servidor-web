@@ -85,3 +85,11 @@ sudo firewall-cmd --reload
 ```
 
 Este comando aplica el permiso de acceso HTTP en el firewall.
+
+## Paso 11. Crear la página principal
+
+```bash
+echo '<h1>Servidor web de Franklin</h1><p>CentOS con Apache HTTPD funcionando.</p>' | sudo tee /var/www/html/index.html
+```
+
+Este comando crea el archivo index.html con el contenido de la página dentro de la carpeta que utiliza Apache.
