@@ -124,3 +124,53 @@ En el navegador de Windows se escribe http:// seguido de la IP del servidor.
 
 Al abrir la dirección debe aparecer el título "Servidor web de Franklin" y el mensaje "CentOS con Apache HTTPD funcionando".
 
+
+## Práctica: servidor FTP con VSFTPD
+
+Instalación y preparación de un servidor FTP en CentOS utilizando MobaXterm.
+
+```bash
+# 1. Comprobar si VSFTPD está instalado.
+rpm -q vsftpd
+
+# 2. Instalar VSFTPD y aceptar las confirmaciones.
+sudo dnf install vsftpd -y
+
+# 3. Iniciar el servicio y activar su arranque automático.
+sudo systemctl enable --now vsftpd
+
+# 4. Comprobar que el servicio esté activo.
+systemctl status vsftpd
+
+# 5. Crear el usuario ftpandres con su carpeta personal.
+sudo useradd -m ftpandres
+
+# 6. Asignar una contraseña al usuario.
+sudo passwd ftpandres
+
+# 7. Crear la carpeta de archivos como el usuario ftpandres.
+sudo -u ftpandres mkdir -p /home/ftpandres/archivos
+
+# 8. Consultar la dirección IP de CentOS.
+hostname -I
+
+# 9. Revisar las opciones de acceso y escritura del servidor.
+sudo grep -E '^(anonymous_enable|local_enable|write_enable)=' /etc/vsftpd/vsftpd.conf
+
+# 10. Permitir FTP en el cortafuegos durante la sesión actual.
+sudo firewall-cmd --add-service=ftp
+
+# 11. Guardar permanentemente el permiso de FTP.
+sudo firewall-cmd --permanent --add-service=ftp
+```
+
+El último comando respondió `success`, indicando que el permiso se guardó correctamente.
+
+### Datos para la conexión FTP en MobaXterm
+
+- **Dirección IP:** 10.21.165.107
+- **Usuario:** ftpandres
+- **Puerto:** 21
+- **Modo pasivo:** activado
+
+
