@@ -172,3 +172,22 @@ El último comando respondió `success`, indicando que el permiso se guardó cor
 - **Usuario:** ftpandres
 - **Puerto:** 21
 - **Modo pasivo:** activado
+
+- ### Comprobación de transferencia FTP
+
+1. Se conectó MobaXterm al servidor `10.21.165.107`, con el usuario `ftpandres` y el puerto `21`.
+
+2. Se subió el archivo `prueba.txt` desde Windows a la carpeta `/home/ftpandres/archivos`.
+
+3. Se comprobó su contenido desde la terminal de CentOS:
+
+```bash
+# Mostrar el contenido del archivo recibido.
+sudo cat /home/ftpandres/archivos/prueba.txt
+```
+
+El archivo mostró el texto: `Prueba FTP de Andres Luna.`
+
+4. Se descargó el archivo a Windows mediante la opción **Download** de MobaXterm y se verificó que conservaba el mismo texto.
+
+**Resultado:** La conexión FTP y las pruebas de subida y descarga se realizaron correctamente.
