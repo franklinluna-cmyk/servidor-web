@@ -129,7 +129,7 @@ Al abrir la dirección debe aparecer el título "Servidor web de Franklin" y el 
 
 Instalación y preparación de un servidor FTP en CentOS utilizando MobaXterm.
 
-```bash
+``
 # 1. Comprobar si VSFTPD está instalado.
 rpm -q vsftpd
 
@@ -162,7 +162,7 @@ sudo firewall-cmd --add-service=ftp
 
 # 11. Guardar permanentemente el permiso de FTP.
 sudo firewall-cmd --permanent --add-service=ftp
-```
+``
 
 El último comando respondió `success`, indicando que el permiso se guardó correctamente.
 
@@ -172,5 +172,3 @@ El último comando respondió `success`, indicando que el permiso se guardó cor
 - **Usuario:** ftpandres
 - **Puerto:** 21
 - **Modo pasivo:** activado
-
-
